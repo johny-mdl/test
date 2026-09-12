@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <ion-grid>
+            <ion-row justify-content-center align-items-center>
+                <ion-col width-50>
+                    <h4>{{game.homeTeam.name}}</h4>
+                </ion-col>
+                <ion-col width-50>
+                    <h4 item-end>{{game.awayTeam.name}}</h4>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let gameMarket of game.gameMarkets">
+            <!--<expandable title="{{gameMarket.marketType}}">
+                <ion-list>
+                    <ion-item *ngFor="let market of gameMarket.runners">
+                        <p>{{market}}</p>
+                    </ion-item>
+                </ion-list>
+            </expandable>-->
+        </ion-item>
+    </ion-list>
+
+</ion-content>
